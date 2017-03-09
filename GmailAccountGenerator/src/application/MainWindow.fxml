@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="main-win" fx:id="layout" alignment="TOP_CENTER" prefHeight="300.0" prefWidth="600.0" style="-fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindowController">
+   <children>
+      <Label fx:id="mainLabel" text="Press the button to create Gmail accounts.">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="submitButt" mnemonicParsing="false" onAction="#onSubmitButtClicked" text="Create Account">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="quitButt" mnemonicParsing="false" onAction="#quitButtClicked" text="Quit">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</VBox>
